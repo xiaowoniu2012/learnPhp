@@ -7,9 +7,15 @@
  */
 
 namespace app\index\controller;
+use think\Controller;
 
-
-class Base
+class Base extends  Controller
 {
-
+    public function hello(){
+        return "hello ,there is base hello!  : )";
+    }
+    public function testbase() {
+        return "this is testbase function";
+    }
 }
+

@@ -8,8 +8,16 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-
+use think\Route;
+use think\Url;
+//Route::rule('hello','index/base/hello');
+//Route::rule(['testbase'=>'index/base/testbase']);
+Route::get('testbase','index/base/testbase');
+Route::get('test',function() {
+    return Url::build('testbase');
+});
 return [
+
 //    '__pattern__' => [
 //        'name' => '\w+',
 //    ],
@@ -19,5 +27,11 @@ return [
 //    ],
 
     'hello/[:userId]' => 'index/hello',
+
+    'blog/:year/:month'=>['blog/archive',['method'=>'get'],['year'=>'\d{4}','month'=>'\d{2}']],
+    'blog/:id'=>['blog/get',['method'=>'get'],['id'=>'\d+']],
+    'blog/:name'=>['blog/read',['method'=>'get'],['name'=>'\w+']],
+
+
 
 ];
