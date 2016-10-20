@@ -28,9 +28,9 @@ return [
 
     'hello/[:userId]' => 'index/hello',
 
-    'blog/:year/:month'=>['blog/archive',['method'=>'get'],['year'=>'\d{4}','month'=>'\d{2}']],
-    'blog/:id'=>['blog/get',['method'=>'get'],['id'=>'\d+']],
-    'blog/:name'=>['blog/read',['method'=>'get'],['name'=>'\w+']],
+//    'blog/:year/:month'=>['blog/archive',['method'=>'get'],['year'=>'\d{4}','month'=>'\d{2}']],
+//    'blog/:id'=>['blog/get',['method'=>'get'],['id'=>'\d+']],
+//    'blog/:name'=>['blog/read',['method'=>'get'],['name'=>'\w+']],
 
 
 
