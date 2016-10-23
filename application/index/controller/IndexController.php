@@ -2,7 +2,7 @@
 namespace app\index\controller;
 use think\Controller;
 use think\Db;
-class Index extends Controller
+class IndexController extends Controller
 {
     public function index($name = "<need parameter>")
     {
@@ -10,10 +10,9 @@ class Index extends Controller
         return  "hello " .' ' . $name . " !";
     }
 
-    public function  hello($userId = "1")
+    public function  hello()
     {
-        $data = Db::name('user')->where('id',$userId)->value('name');
-        $this->assign('name',$data);
+
         return $this->fetch();
     }
 

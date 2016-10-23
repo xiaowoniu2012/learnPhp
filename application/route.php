@@ -18,9 +18,10 @@ Route::get('test',function() {
 });
 return [
 
-//    '__pattern__' => [
-//        'name' => '\w+',
-//    ],
+    '__pattern__' => [
+        'name' => '\w+',
+        'id'=>'\d+',
+    ],
 //    '[hello]'     => [
 //        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
 //        ':name' => ['index/hello', ['method' => 'post']],
@@ -32,6 +33,12 @@ return [
 //    'blog/:id'=>['blog/get',['method'=>'get'],['id'=>'\d+']],
 //    'blog/:name'=>['blog/read',['method'=>'get'],['name'=>'\w+']],
 
-
+    'user/add'=>'index/user/add',
+    'user/add_list'=>'index/user/addlist',
+    'user/update/:id'=>'index/user/update',
+    'user/:id'=>'index/user/read',
+    'user/delete/:id'=>'index/user/delete',
+    'user/create'=>'index/user/create',
+    'user/index'=>'index/user/index',
 
 ];
