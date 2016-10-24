@@ -12,6 +12,7 @@ use think\Controller;
 class BootstrapController extends Controller
 {
     public  function table(){
+        $this->assign('number',23000);
         return $this->fetch();
     }
 }
