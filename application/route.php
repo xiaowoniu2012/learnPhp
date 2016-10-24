@@ -41,4 +41,8 @@ return [
     'user/create'=>'index/user/create',
     'user/index'=>'index/user/index',
 
+
+
+    'bootstrap/table'=>'index/bootstrap/table',
+
 ];
