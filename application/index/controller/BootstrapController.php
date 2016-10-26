@@ -15,4 +15,8 @@ class BootstrapController extends Controller
         $this->assign('number',23000);
         return $this->fetch();
     }
+
+    public function test(){
+        return $this->fetch();
+    }
 }

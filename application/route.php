@@ -16,6 +16,8 @@ Route::get('testbase','index/base/testbase');
 Route::get('test',function() {
     return Url::build('testbase');
 });
+
+Route::get('bootstrap/test','index/bootstrap/test');
 return [
 
     '__pattern__' => [
