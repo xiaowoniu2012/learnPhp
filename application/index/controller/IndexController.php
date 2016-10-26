@@ -20,6 +20,11 @@ class IndexController extends Controller
     {
         return "this is protected test2() function";
 
+
+    }
+    public function videoList()
+    {
+        return $this->fetch('index/list');
     }
 
     private  function  test3()
@@ -27,6 +32,11 @@ class IndexController extends Controller
         return "this is private test3() function";
     }
 
+    public function movie($id){
+        $this->assign('id',$id);
+        return $this->fetch();
+
+    }
 
 
 

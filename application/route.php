@@ -17,7 +17,7 @@ Route::get('test',function() {
     return Url::build('testbase');
 });
 
-Route::get('bootstrap/test','index/bootstrap/test');
+Route::get('layout/test','index/layout/test');
 return [
 
     '__pattern__' => [
@@ -46,5 +46,8 @@ return [
 
 
     'bootstrap/table'=>'index/bootstrap/table',
+
+    'index/movie/:id'=>'index/index/movie',
+    'index/videolist'=>'index/index/videolist/',
 
 ];
