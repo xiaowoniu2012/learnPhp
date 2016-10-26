@@ -18,6 +18,8 @@ Route::get('test',function() {
 });
 
 Route::get('layout/test','index/layout/test');
+Route::get('bootstrap/test','index/bootstrap/test');
+
 return [
 
     '__pattern__' => [
